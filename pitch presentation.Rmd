@@ -1,0 +1,36 @@
+---
+title: "SHINY APP: SUMMARY AND OBSERVATIONS"
+author: "ANUSHYA K"
+date: 13-10-2020
+output: 
+  revealjs::revealjs_presentation:
+    theme: night
+    center: true
+    transition: concave
+---
+
+## About the app
+
+- This app provides the summary and observations for certain datasets that's available in R. 
+- The users can change the no. of observations they wish to see. By default, the value is 10.
+- The summary includes the range, quartiles and the mean of the data.
+- The observations include all the columns in the dataset. The no. of rows can be chosen.
+
+## Uses
+
+- This app can be used to get the descriptive statistics and the structure of some of the datasets available in R.
+- This information can then be used to perform statistical analysis.
+
+## Example of the app (cars dataset)
+
+```{r include=TRUE}
+
+summary(cars)
+head(cars)
+```
+
+## Links
+
+This app was made in R using shiny package. The app is available at https://anushya.shinyapps.io/Summary_and_Observations/
+
+To access the code for this app, use this link: https://github.com/anushya2000/shiny
